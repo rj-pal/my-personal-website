@@ -1,0 +1,231 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 95%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin: 5px 75px;
+
+}
+
+ul {
+  padding-right : 30px; 
+  margin-left: 20px; 
+  font-size: 95%;
+}
+
+ul li {
+    margin-bottom: 15px;
+    margin-right:  15px;
+    margin-left: 5px;
+}
+
+h3 {
+  padding-left: 35px;
+}
+
+.hero-banner h1 {
+  margin-top: 0;
+}
+
+.hero-banner h3 {
+  padding-left: 0;
+}
+
+img.icon {
+  position: relative;
+  top: 8px;
+  height: 25px;
+  width: 25px;
+}
+
+img.profile {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  /* height: 200px; */
+  /* width: 300px; */
+}
+
+p.top_row {
+  margin-top: 0;
+}
+
+.label {
+  text-align: left;
+}
+
+.resume_container {
+  margin-left: 110px;
+  margin-right: 125px;
+}
+
+.contact {
+  display: inline-block;
+  text-align: left;
+}
+
+.container_2 h3 {
+  /* font-weight: bold; */
+  /* color: dodgerblue; */
+  margin: 0; /* Remove default margin */
+}
+
+.container_2 p {
+  padding-left: 35px;
+  padding-right: 50px;
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.japan-career {
+  /* padding-right: 50px; */
+}
+
+
+
+.contact_icon {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  height: 25px;
+  width: 25px;
+}
+
+.icon {
+  margin-right: 1em;
+
+  height: 10;
+  width: 10;
+
+}
+
+
+.socials {
+  display: inline-block;
+  position: relative;
+
+}
+
+hr {
+  width: 95%;
+}
+
+.hero-banner {
+  padding-top: 50px;    /* Adds 50px of space above the content */
+  padding-bottom: 50px; /* Adds 50px of space below the content */
+  /* padding-left: 15px; */
+  margin: 0px 25px;
+  
+  /* You can add any overall styling for the banner here if needed */
+}
+
+.hero-content {
+  display: flex; /* Makes the immediate children flex items */
+  align-items: center; /* Vertically centers items along the cross axis */
+  gap: 3rem; /* Provides space between the image and the text */
+  padding: 5px 35px; /* top-bottom left-right */
+  flex-wrap: nowrap; /* Crucial for initial desktop view**: Prevents wrapping until media query */
+  background-color: whitesmoke;
+
+  /* Add this for very large screens */
+  max-width: 1600px; /* Or whatever maximum comfortable width you prefer */
+  /* margin-left: auto; Center the content */
+  /* margin-right: auto; Center the content */
+  /* align-items: flex-start; */
+}
+
+.hero-image {
+  /* This is the key to keeping the image static and on the left */
+  flex-shrink: 0; /* **Prevents the image from shrinking** */
+  flex-basis: 380px;
+}
+
+.profile {
+  width: 100%; 
+  height: auto; /*Maintain aspect ratio */
+  display: block; /* Important for images inside flex containers */
+}
+
+.hero-text {
+  flex-grow: 1; /* **Allows the text content to grow and take available space** */
+  flex-shrink: 1; /* **Allows the text content to shrink as needed** */
+  flex-basis: auto; /* Default, but good to be explicit; can shrink below content size */
+  min-width: 0; /* **Crucial for text to shrink properly in flexbox**. Prevents content from forcing a minimum width. */
+  padding-bottom: 5px;
+}
+
+.icon {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* @media (max-width: 1279px) { 
+    .hero-image {
+        flex-basis: 325px; 
+    }
+
+    .hero-text {
+      font-size: 90%;
+    }
+} */
+
+/* --- Responsive Behavior (Media Queries) --- */
+@media (max-width: 1024px) { /* Adjust this breakpoint as needed */
+  body {
+  font-size: 90%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px 10px;
+
+}
+  
+  .hero-content {
+    flex-direction: column; /* **Stacks items vertically on smaller screens** */
+    align-items: center; /* Centers items horizontally when stacked */
+    margin-left: 0; /* Remove specific left margin when stacked */
+    flex-wrap: wrap; /* Allow wrapping when stacked */
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero-image {
+    margin-top: 10px;
+    flex-basis: auto;
+    max-width: 80%;
+    height: auto;
+    /* height: 50%; */
+    
+  }
+
+  .hero-text {
+    width: 90%; /* Allows the text block to take up more width when stacked, making it responsive */
+    flex-grow: 0; /* No need to grow when stacked */
+    flex-shrink: 0; /* No need to shrink beyond its own width when stacked */
+  }
+
+  .profile {
+    width: 90%; /* Make the image fill the width of its parent .hero-image container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+  }
+
+  /* Optional: Adjust top/bottom padding on the hero-banner for smaller screens if needed */
+  .hero-banner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    max-width: 85%;
+    
+  }
+
+  .hero-text {
+    font-size: 90%;
+  }
+
+}
