@@ -1,6 +1,6 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 95%;
+  font-size: 1rem;
   padding-left: 60px;
   padding-right: 60px;
   margin: 5px 75px;
@@ -50,6 +50,41 @@ p.top_row {
   margin-top: 0;
 }
 
+.kanji {
+    /* Basic container for the phrase */
+    background-color: #ffffff; /* White background for the container */
+    padding: 3rem 4rem; /* Generous padding top/bottom and left/right */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Ensure text inside is centered within the div */
+    /* max-width: 75%; Prevent div from becoming too wide on very large screens */
+}
+
+#kanji {
+    text-align: center;
+    font-size: 1.5em; /* Large font size for impact (scales with root font size) */
+    font-weight: bold; /* Make it bold */
+    letter-spacing: 0.5em; /* Add a little space between letters for elegance */
+    line-height: 1.5; /* Adjust line height for readability if it were multi-line */
+    color: #5a5a5a; /* A slightly softer dark grey for the text */
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+}
+
+#gauguin {
+    text-align: center;
+    font-size: 1.5em; /* Large font size for impact (scales with root font size) */
+    font-weight: bold; /* Make it bold */
+    letter-spacing: 0.05em; 
+    line-height: 1.5;
+    color: #5a5a5a; /* A slightly softer dark grey for the text */
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    
+}
+
+
 .label {
   text-align: left;
 }
@@ -73,8 +108,9 @@ p.top_row {
 .container_2 p {
   padding-left: 35px;
   padding-right: 50px;
-  text-align: justify;
-  margin-bottom: 1em;
+  text-align: left;
+  letter-spacing: 0.01em; 
+  margin-bottom: 1.8em;
 }
 
 .japan-career {
@@ -109,6 +145,7 @@ p.top_row {
 
 hr {
   width: 95%;
+  margin: 1.5rem auto;
 }
 
 .hero-banner {
@@ -124,9 +161,10 @@ hr {
   display: flex; /* Makes the immediate children flex items */
   align-items: center; /* Vertically centers items along the cross axis */
   gap: 3rem; /* Provides space between the image and the text */
-  padding: 5px 35px; /* top-bottom left-right */
+  padding: 1em 2em; /* top-bottom left-right */
   flex-wrap: nowrap; /* Crucial for initial desktop view**: Prevents wrapping until media query */
   background-color: whitesmoke;
+  border-radius: 8px;
 
   /* Add this for very large screens */
   max-width: 1600px; /* Or whatever maximum comfortable width you prefer */
