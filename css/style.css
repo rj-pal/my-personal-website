@@ -4,7 +4,14 @@ body {
   padding-left: 60px;
   padding-right: 60px;
   margin: 5px 75px;
+  /* background-color: #F9F9F9; */
+  /* background-color: #FFFCFB; */
+}
 
+h3 {
+  padding-left: 35px; /* Section headers padding for overall text alignment */
+  margin: 5px 0px;
+  border: solid black;
 }
 
 ul {
@@ -19,69 +26,38 @@ ul li {
     margin-left: 5px;
 }
 
-h3 {
-  padding-left: 35px;
-}
-
-.hero-banner h1 {
-  margin-top: 0;
-}
-
-.hero-banner h3 {
-  padding-left: 0;
-}
-
-img.icon {
-  position: relative;
-  top: 8px;
-  height: 25px;
-  width: 25px;
-}
-
-img.profile {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  /* height: 200px; */
-  /* width: 300px; */
-}
-
 p.top_row {
   margin-top: 0;
 }
 
+.bio-container p {
+  padding-left: 35px;
+  padding-right: 50px;
+  text-align: left;
+  letter-spacing: 0.01em; 
+  margin-bottom: 1.8em;
+  border: solid black;
+}
+
+.bio-container .quote {
+  text-align: center;
+  font-size: 1.5em; /* Large font size for impact (scales with root font size) */
+  font-weight: bold; /* Make it bold */
+  letter-spacing: 0.05em; 
+  line-height: 1.5;
+  color: #5a5a5a; /* A slightly softer dark grey for the text */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: solid black;
+}
+
 .kanji {
-    /* Basic container for the phrase */
-    background-color: #ffffff; /* White background for the container */
-    padding: 3rem 4rem; /* Generous padding top/bottom and left/right */
-    border-radius: 10px; /* Slightly rounded corners for a softer look */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center; /* Ensure text inside is centered within the div */
-    /* max-width: 75%; Prevent div from becoming too wide on very large screens */
-}
-
-#kanji {
-    text-align: center;
-    font-size: 1.5em; /* Large font size for impact (scales with root font size) */
-    font-weight: bold; /* Make it bold */
     letter-spacing: 0.5em; /* Add a little space between letters for elegance */
-    line-height: 1.5; /* Adjust line height for readability if it were multi-line */
-    color: #5a5a5a; /* A slightly softer dark grey for the text */
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */  
 }
 
-#gauguin {
-    text-align: center;
-    font-size: 1.5em; /* Large font size for impact (scales with root font size) */
-    font-weight: bold; /* Make it bold */
+.gauguin {
     letter-spacing: 0.05em; 
-    line-height: 1.5;
-    color: #5a5a5a; /* A slightly softer dark grey for the text */
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    
 }
 
 
@@ -99,19 +75,6 @@ p.top_row {
   text-align: left;
 }
 
-.container_2 h3 {
-  /* font-weight: bold; */
-  /* color: dodgerblue; */
-  margin: 0; /* Remove default margin */
-}
-
-.container_2 p {
-  padding-left: 35px;
-  padding-right: 50px;
-  text-align: left;
-  letter-spacing: 0.01em; 
-  margin-bottom: 1.8em;
-}
 
 .japan-career {
   /* padding-right: 50px; */
@@ -128,13 +91,13 @@ p.top_row {
   width: 25px;
 }
 
-.icon {
+/* .icon {
   margin-right: 1em;
 
   height: 10;
   width: 10;
 
-}
+} */
 
 
 .socials {
@@ -149,53 +112,52 @@ hr {
 }
 
 .hero-banner {
-  padding-top: 50px;    /* Adds 50px of space above the content */
-  padding-bottom: 50px; /* Adds 50px of space below the content */
-  /* padding-left: 15px; */
-  margin: 0px 25px;
-  
-  /* You can add any overall styling for the banner here if needed */
+  padding: 50px 0px; /* 50px padding top and bottom to distinguish the hero banner */
+  margin: 0px 25px; /* 25px margin left and right to keep things aligned with text in main bio and other text sections */
+  border: solid black;
+}
+
+.hero-banner h3 {
+  padding-left: 0; /* Keeps all text aligned */
 }
 
 .hero-content {
-  display: flex; /* Makes the immediate children flex items */
-  align-items: center; /* Vertically centers items along the cross axis */
-  gap: 3rem; /* Provides space between the image and the text */
-  padding: 1em 2em; /* top-bottom left-right */
-  flex-wrap: nowrap; /* Crucial for initial desktop view**: Prevents wrapping until media query */
+  display: flex; /* row direction flex */
+  align-items: center; /* Align on the cross axis or column-wise with image aligned vertically with text */
+  gap: 3rem; 
   background-color: whitesmoke;
   border-radius: 8px;
-
-  /* Add this for very large screens */
-  max-width: 1600px; /* Or whatever maximum comfortable width you prefer */
-  /* margin-left: auto; Center the content */
-  /* margin-right: auto; Center the content */
-  /* align-items: flex-start; */
+  padding: 1em 2em; /* Centre the image and text proportionally in the soft grey background */
+  flex-wrap: nowrap; /* Prevent wrapping until media query stacks the context */
+  max-width: 1600px; /* For very large screens to keep the background from stretching */
 }
 
 .hero-image {
-  /* This is the key to keeping the image static and on the left */
-  flex-shrink: 0; /* **Prevents the image from shrinking** */
-  flex-basis: 380px;
+  flex-shrink: 0; /* Keep image at set size until media queries start and it scales for smaller screens*/
+  flex-basis: 380px; /* My prefered size relative to the image size */
 }
 
-.profile {
-  width: 100%; 
-  height: auto; /*Maintain aspect ratio */
-  display: block; /* Important for images inside flex containers */
+.hero-photo {
+  max-width: 100%; 
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  display: block; /* For image inside flex container */
 }
 
 .hero-text {
-  flex-grow: 1; /* **Allows the text content to grow and take available space** */
-  flex-shrink: 1; /* **Allows the text content to shrink as needed** */
-  flex-basis: auto; /* Default, but good to be explicit; can shrink below content size */
-  min-width: 0; /* **Crucial for text to shrink properly in flexbox**. Prevents content from forcing a minimum width. */
-  padding-bottom: 5px;
+  flex-grow: 1; /* image maintains size while the text information adjusts to screen size changes */
+  flex-shrink: 1; 
+  flex-basis: auto; /* Explcit statement of default */
+  min-width: 0; /* No default enforced minimum width but should not be used since media queries will kick in first*/
+  padding-bottom: 5px; /* For better overall alignment */
 }
 
-.icon {
-  vertical-align: middle;
+.hero-icon {
+  position: relative; /* Relative position for fine-tuning the size and position of icon */
+  top: 8px; /* Moves icon down and in better alignment with text */
   margin-left: 5px;
+  height: 25px; 
+  width: 25px;
 }
 
 /* @media (max-width: 1279px) { 
