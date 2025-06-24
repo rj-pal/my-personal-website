@@ -8,11 +8,21 @@ body {
   /* background-color: #FFFCFB; */
 }
 
+/* Universal stylings applied across site */
 h3 {
-  padding-left: 35px; /* Section headers padding for overall text alignment */
+  padding-left: 35px; /* Section headers and Hero banner text padding for overall text alignment */
   margin: 5px 0px;
-  border: solid black;
 }
+
+hr {
+  width: 95%; /* a little smaller than text */
+  margin: 1.5rem auto;
+}
+
+.label {
+  text-align: left;
+}
+
 
 ul {
   padding-right : 30px; 
@@ -26,95 +36,12 @@ ul li {
     margin-left: 5px;
 }
 
-p.top_row {
-  margin-top: 0;
-}
 
-.bio-container p {
-  padding-left: 35px;
-  padding-right: 50px;
-  text-align: left;
-  letter-spacing: 0.01em; 
-  margin-bottom: 1.8em;
-  border: solid black;
-}
-
-.bio-container .quote {
-  text-align: center;
-  font-size: 1.5em; /* Large font size for impact (scales with root font size) */
-  font-weight: bold; /* Make it bold */
-  letter-spacing: 0.05em; 
-  line-height: 1.5;
-  color: #5a5a5a; /* A slightly softer dark grey for the text */
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  border: solid black;
-}
-
-.kanji {
-    letter-spacing: 0.5em; /* Add a little space between letters for elegance */
-    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */  
-}
-
-.gauguin {
-    letter-spacing: 0.05em; 
-}
-
-
-.label {
-  text-align: left;
-}
-
-.resume_container {
-  margin-left: 110px;
-  margin-right: 125px;
-}
-
-.contact {
-  display: inline-block;
-  text-align: left;
-}
-
-
-.japan-career {
-  /* padding-right: 50px; */
-}
-
-
-
-.contact_icon {
-  display: inline-block;
-  position: absolute;
-  top: 22px;
-  left: 146px;
-  height: 25px;
-  width: 25px;
-}
-
-/* .icon {
-  margin-right: 1em;
-
-  height: 10;
-  width: 10;
-
-} */
-
-
-.socials {
-  display: inline-block;
-  position: relative;
-
-}
-
-hr {
-  width: 95%;
-  margin: 1.5rem auto;
-}
-
+/* Hero banner stylings with two content pieces - photo and intro text using flex properties */
 .hero-banner {
   padding: 50px 0px; /* 50px padding top and bottom to distinguish the hero banner */
   margin: 0px 25px; /* 25px margin left and right to keep things aligned with text in main bio and other text sections */
-  border: solid black;
+   
 }
 
 .hero-banner h3 {
@@ -159,6 +86,88 @@ hr {
   height: 25px; 
   width: 25px;
 }
+
+/* Biography stylings with two types of paragraphs - basic informational and quote highlights */
+.bio-container p {
+  padding-left: 35px; /* General text paragaph styling for bio information */
+  padding-right: 50px;
+  text-align: left;
+  letter-spacing: 0.01em; 
+  margin-bottom: 1.8em;
+   
+}
+
+.bio-container .quote {
+  text-align: center; /* Larger font size and center alignment for highlighting impact with other text modifications */
+  font-size: 1.5em; 
+  font-weight: bold;
+  letter-spacing: 0.05em; 
+  line-height: 1.5;
+  color: #5a5a5a;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+   
+}
+
+.kanji {
+    letter-spacing: 0.5em; /* Add a little space between letters for elegance in presentation of Japanese text */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */  
+}
+
+.gauguin {
+    letter-spacing: 0.05em; 
+}
+
+
+.resume_container {
+  margin-left: 110px;
+  margin-right: 125px;
+}
+
+.contact {
+  display: inline-block;
+  text-align: left;
+}
+
+
+.japan-career {
+  /* padding-right: 50px; */
+}
+
+.social-links {
+  padding: 5px 0px 10px 15px;
+}
+
+.social-links .icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/* .contact_icon {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: 146px;
+  height: 25px;
+  width: 25px;
+} */
+
+/* .icon {
+  margin-right: 1em;
+  height: 10;
+  width: 10;
+
+} */
+
+
+/* .socials {
+  display: inline-block;
+  position: relative;
+
+} */
 
 /* @media (max-width: 1279px) { 
     .hero-image {
