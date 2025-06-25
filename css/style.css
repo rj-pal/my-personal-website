@@ -3,7 +3,8 @@ body {
   font-size: 1rem;
   padding-left: 60px;
   padding-right: 60px;
-  margin: 5px 75px;
+  margin: 5px 100px;
+  /* background-color: #fff; */
   /* background-color: #F9F9F9; */
   /* background-color: #FFFCFB; */
 }
@@ -17,6 +18,10 @@ h3 {
 hr {
   width: 95%; /* a little smaller than text */
   margin: 1.5rem auto;
+}
+
+footer {
+  padding-left: 30px;
 }
 
 .label {
@@ -41,11 +46,13 @@ ul li {
 .hero-banner {
   padding: 50px 0px; /* 50px padding top and bottom to distinguish the hero banner */
   margin: 0px 25px; /* 25px margin left and right to keep things aligned with text in main bio and other text sections */
+  width: 100%;
    
 }
 
 .hero-banner h3 {
   padding-left: 0; /* Keeps all text aligned */
+  
 }
 
 .hero-content {
@@ -56,7 +63,7 @@ ul li {
   border-radius: 8px;
   padding: 1em 2em; /* Centre the image and text proportionally in the soft grey background */
   flex-wrap: nowrap; /* Prevent wrapping until media query stacks the context */
-  max-width: 1600px; /* For very large screens to keep the background from stretching */
+  max-width: 1200px; /* For very large screens to keep the background from stretching */
 }
 
 .hero-image {
@@ -87,6 +94,11 @@ ul li {
   width: 25px;
 }
 
+.bio-container {
+  width: 100%;
+  
+}
+
 /* Biography stylings with two types of paragraphs - basic informational and quote highlights */
 .bio-container p {
   padding-left: 35px; /* General text paragaph styling for bio information */
@@ -98,8 +110,7 @@ ul li {
 }
 
 .bio-container .quote {
-  text-align: center; /* Larger font size and center alignment for highlighting impact with other text modifications */
-  font-size: 1.5em; 
+  text-align: center; /* Larger font size and center alignment for highlighting impact with other text modifications */ 
   font-weight: bold;
   letter-spacing: 0.05em; 
   line-height: 1.5;
@@ -110,12 +121,14 @@ ul li {
 }
 
 .kanji {
-    letter-spacing: 0.5em; /* Add a little space between letters for elegance in presentation of Japanese text */
+  font-size: 1.5em;
+  letter-spacing: 0.5em; /* Add a little space between letters for elegance in presentation of Japanese text */
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */  
 }
 
 .gauguin {
-    letter-spacing: 0.05em; 
+  font-size: 1.25em;
+  letter-spacing: 0.05em; 
 }
 
 
@@ -130,8 +143,8 @@ ul li {
 }
 
 
-.japan-career {
-  /* padding-right: 50px; */
+.teaching-container{
+  width: 100%;
 }
 
 .social-links {
@@ -182,10 +195,10 @@ ul li {
 /* --- Responsive Behavior (Media Queries) --- */
 @media (max-width: 1024px) { /* Adjust this breakpoint as needed */
   body {
-  font-size: 90%;
+  /* font-size: 90%; */
   padding-left: 10px;
   padding-right: 10px;
-  margin: 10px 10px;
+  margin: 10px 45px;
 
 }
   
@@ -204,6 +217,7 @@ ul li {
     flex-basis: auto;
     max-width: 80%;
     height: auto;
+    margin-left: 0;
     /* height: 50%; */
     
   }
@@ -225,6 +239,18 @@ ul li {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
+  .bio-container .gauguin {
+    font-size: 1.1em;
+  }
+
+  .bio-container .kanji {
+    font-size: 1.25em;
+  }
+    
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -237,4 +263,36 @@ ul li {
     font-size: 90%;
   }
 
+}
+
+@media (min-width: 1920px) { 
+  .hero-banner {
+    max-width: 1920px; 
+    margin: 5px auto;
+  }
+
+  .bio-container {
+    max-width: 1920px; 
+    margin: 5px auto;
+  }
+
+  .resume_container {
+    max-width: 1920px; 
+    margin: 5px auto;
+  }
+  .teaching-container {
+    max-width: 1920px; 
+    margin: 5px auto;
+
+  }
+
+  footer {
+    max-width: 1920px; 
+    margin: 5px auto;
+  }
+
+  hr {
+    max-width: 1920px; 
+    margin: 5px auto;
+  }
 }
