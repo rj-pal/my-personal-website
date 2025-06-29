@@ -2,11 +2,14 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 85px;
   margin: 5px 100px;
-  /* background-color: #fff; */
-  /* background-color: #F9F9F9; */
+  /* background-color: #F1EFEC; */
   /* background-color: #FFFCFB; */
+  /* background-color: #F2F2F2; */
+  /* background-color: #F4EBD3; */
+  /* background-color: #F9F9F9; */
+  background-color: #FFF;
 }
 
 /* Universal stylings applied across site */
@@ -16,7 +19,7 @@ h3 {
 }
 
 hr {
-  width: 95%; /* a little smaller than text */
+  width: 90%; /* a little smaller than text */
   margin: 1.5rem auto;
 }
 
@@ -24,7 +27,49 @@ footer {
   padding-left: 30px;
 }
 
-.site-info p {
+.social-links {
+  padding: 5px 0px 10px 15px;
+}
+
+.social-links .icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.site-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  /* flex-direction: column; */
+}
+
+.photo-credit {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.kanji-no-break {
+  white-space: nowrap;
+}
+
+.icon-credit {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.self-credit {
+  grid-column: span 2;
+}
+
+.copy-right {
+  grid-column: span 2;
+}
+
+.site-info * {
+  margin: 2px;
   text-align: center;
 }
 
@@ -48,9 +93,10 @@ ul li {
 
 /* Hero banner stylings with two content pieces - photo and intro text using flex properties */
 .hero-banner {
-  padding: 25px 0px; /* 25px padding top and bottom to distinguish the hero banner */
-  margin: 0px 25px; /* 25px margin left and right to keep things aligned with text in main bio and other text sections */
+  padding-top: 25px; /* 25px padding top and bottom to distinguish the hero banner */
+  padding-bottom: 25px;
   width: 100%;
+   
    
 }
 
@@ -64,6 +110,8 @@ ul li {
   align-items: center; /* Align on the cross axis or column-wise with image aligned vertically with text */
   gap: 3rem; 
   background-color: whitesmoke;
+  /* background-color: #F1EFEC; */
+  /* background-color: #DED3C4; */
   border-radius: 8px;
   padding: 1em 2em; /* Centre the image and text proportionally in the soft grey background */
   flex-wrap: nowrap; /* Prevent wrapping until media query stacks the context */
@@ -122,6 +170,7 @@ ul li {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
    
+   
 }
 
 .kanji {
@@ -133,6 +182,7 @@ ul li {
 .gauguin {
   font-size: 1.25em;
   letter-spacing: 0.05em; 
+  
 }
 
 
@@ -151,50 +201,8 @@ ul li {
   width: 100%;
 }
 
-.social-links {
-  padding: 5px 0px 10px 15px;
-}
-
-.social-links .icon {
-  display: inline-block;
-  height: 25px;
-  width: 25px;
-  margin-left: 5px;
-  margin-right: 10px;
-}
-
-/* .contact_icon {
-  display: inline-block;
-  position: absolute;
-  top: 22px;
-  left: 146px;
-  height: 25px;
-  width: 25px;
-} */
-
-/* .icon {
-  margin-right: 1em;
-  height: 10;
-  width: 10;
-
-} */
 
 
-/* .socials {
-  display: inline-block;
-  position: relative;
-
-} */
-
-/* @media (max-width: 1279px) { 
-    .hero-image {
-        flex-basis: 325px; 
-    }
-
-    .hero-text {
-      font-size: 90%;
-    }
-} */
 
 /* --- Responsive Behavior (Media Queries) --- */
 @media (max-width: 1024px) { /* Adjust this breakpoint as needed */
@@ -204,7 +212,7 @@ ul li {
   padding-right: 10px;
   margin: 10px 45px;
 
-}
+  }
   
   .hero-content {
     flex-direction: column; /* **Stacks items vertically on smaller screens** */
@@ -264,6 +272,14 @@ ul li {
     font-size: 90%;
   }
 
+  .social-links {
+    text-align: center;
+  }
+
+  hr {
+    width: 85%;
+  }
+
 }
 
 @media (min-width: 1920px) { 
@@ -292,8 +308,5 @@ ul li {
     margin: 5px auto;
   }
 
-  hr {
-    max-width: 1920px; 
-    margin: 5px auto;
-  }
+  
 }

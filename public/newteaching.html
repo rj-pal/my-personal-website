@@ -17,53 +17,27 @@
         
         .row-header {
             font-weight: bolder;
-            background-color: #f8f9fa; /* Light background for headers */
-            border-bottom: 2px solid #dee2e6;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            text-align: left; /* Center header text */
+            background-color: whitesmoke; 
+            border-bottom: 2px solid #dee2e6; /* 3D effect on header box */
         }
 
         .stacked-header {
-            background-color: #f8f9fa; /* Light background for headers */
+            background-color: whitesmoke;
             border-bottom: 2px solid #dee2e6;
-            padding-top: 1px;
-            padding-bottom: 5px;
-            text-align: left; /* Center header text */
-            margin-top: 10px;
+        }
+       
 
-        }
-
-        .data-row {
-            border-bottom: 1px solid #e9ecef; /* Subtle border for data rows */
-            padding-top: 15px;
-            padding-bottom: 15px;
-            vertical-align: top; /* Align content to the top */
-        }
-        .data-row .col-2:first-child { /* Adjusted selector for col-2 */
-            text-align: left; /* Center the Date column */
-            font-weight: bold; /* Make date bold */
-        }
-        .data-row p {
-            margin-bottom: 5px; /* Spacing for paragraphs within work description */
-            line-height: 1.5; /* Improve readability */
-        }
-        .data-row p.top_row {
-            margin-top: 0;
-        }
-
-        /* Custom CSS to make the container fluid at very large screens */
-        @media (min-width: 1200px) {
-            .resume_container.container {
-                max-width: 90%;
+        /* Use own custom medai queries to control fluidity at very large screens */
+        @media (min-width: 1400px) {
+            .resume_container.container { /* keeps it porpotional to grow slowly*/
+                max-width: 85%;
                 padding: 10px 65px;
             }
         }
 
         @media (min-width: 1920px) { 
-            .resume_container.container {
-                max-width: 1728px;
-                padding: 5px auto;
+            .resume_container.container { /* max the size out at 85% of 1920px */
+                max-width: 1632px;
             }
         }
         
@@ -87,26 +61,26 @@
             </div>
         </div>
 
-        <div class="row row-header d-none d-md-flex">
+        <div class="row row-header d-none d-md-flex py-2">
             <div class="col-12 col-md-2">Date</div>
             <div class="col-12 col-md-4">Position</div>
             <div class="col-12 col-md-6">Work</div>
         </div>
         
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2020</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">主事</p>
                 <p class="mb-1">Special Senior Instructor</p>
                 <p class="pt-4 mb-1">中部本部 名古屋本校</p>
                 <p>Nagoya Head School</p>
             </div>
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Involved in a top-level pilot project with new parent company KDDI on intersection of technology and English learning.</p>
                 <p class="mb-3">Crafted short demostration videos for potential on-line English learning platform.</p>
                 <p class="mb-3">Worked on developing new course ideas for integrated study abroad program and premium private lessons.</p>
@@ -115,13 +89,13 @@
        </div>
 
 
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2017 - 2019</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">プログラムコーディネーター</p>
                 <p class="mb-1">Program Coordinator</p>
                 <p class="pt-4 mb-1">シニアインストラクター</p>
@@ -130,7 +104,7 @@
                 <p>Nagoya Head School</p>
             </div>
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Headed course and cirriculum development with Head School team.</p>
                 <p class="mb-3">Assisted manager in education-side strategy and marketing.</p>
                 <p class="mb-3">Organized events for young learners incorporating science, math and social studies into English learning.</p>
@@ -141,20 +115,20 @@
             </div>
         </div>
 
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2014 - 2016</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">シニアインストラクター</p>
                 <p class="mb-1">Senior Instructor</p>
                 <p class="pt-4 mb-1">中部本部 名古屋本校</p>
                 <p>Nagoya Head School</p>
             </div>
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Taught wide range of courses: core 4-Skills, critical thinking and discussion, and general conversation.</p>
                 <p class="mb-3">Improved students' English to a high degree and motivated students to achieve their goals and make life changes.</p>
                 <p class="mb-3">Interviewed prospective students and provided information sessions about our school.</p>
@@ -163,13 +137,13 @@
             </div>
         </div>
 
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2011 - 2014</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">ンストラクター</p>
                 <p class="mb-1">Instructor</p>
                 <p class="pt-4 mb-1">企業インストラクター</p>
@@ -179,7 +153,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Taught classes at unique full-time intensive English School.</p>
                 <p class="mb-3">Taught Business English and Conversation to companies in the Chubu Region.</p>
                 <p class="mb-3">Made teaching material for both the Education and Corporate Department.</p>
@@ -189,13 +163,13 @@
         </div>
 
    
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2009 - 2010</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">ンストラクター</p>
                 <p class="mb-1">Instructor</p>
                 <p class="pt-4 mb-1">外国人教師</p>
@@ -204,33 +178,32 @@
                 <p>Central Japan Headquarters</p>
             </div>
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Supported schools throughout the Chubu Region in senior capacity through lessons and sales.</p>
                 <p class="mb-3">Reinvigorated struggling schools to return to profitability.</p>
                 <p class="mb-3">Worked closely with the Education Department on teaching material development.</p>
             </div>
         </div>
 
-        <div class="row data-row">
+        <div class="row border-bottom py-3">
             <div class="col-12 col-md-2">
-                <strong class="stacked-header d-md-none mb-2 d-block">Date</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Date</strong>
                 <div class="mb-2">2006 - 2009</div>
             </div>
             <div class="col-12 col-md-4">
-                <strong class="stacked-header d-md-none mb-2 d-block">Position</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Position</strong>
                 <p class="mb-1">外国人教師</p>
                 <p class="mb-1">Foreign Teacher</p>
                 <p class="pt-4 mb-1">岐阜県</p>
                 <p>Gifu Branch School</p>
             </div>
             <div class="col-12 col-md-6">
-                <strong class="stacked-header d-md-none mb-2 d-block">Work</strong>
+                <strong class="stacked-header d-md-none mb-2 d-block my-2 p-1">Work</strong>
                 <p class="mb-3">Taught students of all ages using in-house teaching methods.</p>
                 <p class="mb-3">Supported students education pathways and increased sales of in-house products.</p>
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
