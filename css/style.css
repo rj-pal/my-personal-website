@@ -270,6 +270,10 @@ ul li {
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 5px;
+  }
+
   .hero-image {
     max-width: 85%;
     
